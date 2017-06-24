@@ -1,0 +1,8 @@
+div.banner {
+  width: 100%;
+  background: #009688;
+}
+
+div.banner h2 {
+  text-transform: uppercase;
+}
