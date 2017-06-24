@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { MyBannerComponent } from './my-banner/my-banner.component';
-import { CommonLabelsService } from './services';
+import { CommonLabelsService, DataService } from './services';
 
 @NgModule({
   declarations: [
@@ -11,9 +12,10 @@ import { CommonLabelsService } from './services';
     MyBannerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [CommonLabelsService],
+  providers: [CommonLabelsService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
